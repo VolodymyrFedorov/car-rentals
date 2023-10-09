@@ -19,8 +19,6 @@ export const fetchAllCars = async (page, filter) => {
   return data;
 };
 
-// id в БД должен быть строкой, а не числом (например, "id": "7373")
-// Иначе, не сработает ендпоинт cars/:id (будет cars?id=..)
 export const updateFavoriteById = async (id, status) => {
   const { data } = await axios.put(`cars/${id}`, {
     favorite: !!status,
