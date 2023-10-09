@@ -1,13 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import {
-  Banner,
-  Title,
-  Desc,
-  About,
-  GetStartedBtn,
-  Container,
-} from './Home.styled';
+import { Banner, Title, About, GetStartedBtn, Container } from './Home.styled';
 
 const Home = () => {
   return (
@@ -15,10 +8,6 @@ const Home = () => {
       <Banner>
         <About>
           <Title>Find the best rental prices</Title>
-          <Desc>
-            on luxury, economy, and family rental cars with <span>FREE</span>{' '}
-            amendments in <span>over 60,000</span> locations worldwide
-          </Desc>
           <Link to="/catalog">
             <GetStartedBtn>Choose a car</GetStartedBtn>
           </Link>
