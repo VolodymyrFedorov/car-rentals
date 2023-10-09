@@ -40,7 +40,7 @@ export const Header = () => {
     <>
       <PageHeader ref={headerRef} shaded={!onTop} visible={onTop || visible}>
         <HeaderContainer>
-          <Logo />
+          <Logo style={{ margin: 15, marginLeft: 20 }} />
           {!showNav && (
             <MenuBtn type="button" onClick={() => setShowMenu(true)}>
               <IconMenu size={30} />
@@ -57,7 +57,10 @@ export const Header = () => {
         modalContainer={false}
         portal="#root-menu"
       >
-        <Logo onClick={() => setShowMenu(false)} style={{ marginLeft: 20 }} />
+        <Logo
+          onClick={() => setShowMenu(false)}
+          style={{ margin: 15, marginLeft: 20 }}
+        />
         <MenuCloseBtn type="button" onClick={() => setShowMenu(false)}>
           <IconClose size={25} />
         </MenuCloseBtn>
