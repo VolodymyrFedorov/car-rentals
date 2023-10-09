@@ -20,7 +20,6 @@ export const Container = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
 
-  /* Вписываем форму по высоте, если низкий вьюпорт  */
   @media screen and (max-height: ${({ offsetHeight }) => offsetHeight}px) {
     top: 10px;
     transform: translateX(-50%);

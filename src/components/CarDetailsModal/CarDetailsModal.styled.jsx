@@ -53,7 +53,7 @@ export const Block = styled.div`
 `;
 
 export const ModalThumb = styled(Thumb)`
-  height: 200px; //max-content;
+  height: 200px;
   @media screen and (min-width: ${tablet}) {
     height: 300px;
   }

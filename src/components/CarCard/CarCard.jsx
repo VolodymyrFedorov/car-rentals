@@ -44,8 +44,6 @@ export const CarCard = ({
   const alt = `${make} ${model}`;
 
   const handleAddToFavsClick = () => {
-    // для лучшего UX ставим сразу без задержки бекенда,
-    // а в случае ошибки - снимаем (*)
     setIsFavorite(cur => !cur);
     api
       .updateFavoriteById(id, !isFavorite)
@@ -74,7 +72,6 @@ export const CarCard = ({
       </Title>
 
       <DataList
-        // минимальный
         style={{ marginBottom: 15 }}
         items={[
           city,

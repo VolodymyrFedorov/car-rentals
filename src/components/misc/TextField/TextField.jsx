@@ -13,7 +13,7 @@ export const TextField = forwardRef(
       inputOverride: InputStyled,
       ...restProps
     },
-    ref /* after props */
+    ref
   ) => {
     const InputComp = InputStyled || Input;
     return (

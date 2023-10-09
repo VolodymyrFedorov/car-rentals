@@ -23,8 +23,6 @@ export const Filters = ({ onSubmit = Function.prototype }) => {
     onSubmit(data);
   };
 
-  // при очистке любого поля - делаем сабмит для сброса фильтра
-
   const handleBrandChange = val => {
     const brand = val?.label ?? '';
     setData({ ...data, brand });

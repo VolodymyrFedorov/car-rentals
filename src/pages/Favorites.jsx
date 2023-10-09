@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { toast } from 'react-toastify';
 import { CarList } from 'components/CarList/CarList';
 import { PageTitle, NoItemsFound } from 'styles';
